@@ -85,7 +85,7 @@ header{
     text-align: center;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #229954;
     font-weight: bold;
 }
@@ -183,7 +183,7 @@ header{
     color: rgb(230, 222, 222);
 }
 .title-modal{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 2rem;
@@ -409,5 +409,15 @@ header{
 
     .contenedor-descripcion p{
         font-size: 2.5rem;
+    }
+
+    .campo label{
+
+        font-size: 2.5rem;
+
+    }
+    
+    .title-modal{
+        font-size: 3.5rem;
     }
 }
