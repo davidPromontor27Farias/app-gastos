@@ -1,0 +1,395 @@
+:root {
+    --azul: #3b82f6;
+    --blanco: #ffffff;
+    --gris-claro: #F0F3F4;
+    --gris: #94a3b8;
+    --gris-oscuro: #64748b;
+    --negro: #000;
+    
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Nunito', sans-serif;
+    background-color: #DC7633;
+
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+header{
+    background-color: #229954 ;
+    position: relative;
+}
+.fijar{
+    overflow: hidden;
+    height: 100vh;
+}
+.title{
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 3rem 0;
+    font-size: 3rem;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.contenedor-gasto{
+    background-color: #F0F3F4;
+    padding: 1.5rem;
+    margin-top: -5rem;
+    transform: translateY(8rem);
+}
+.formulario{
+    width: 100%;
+    margin: 0 auto;
+    padding: 7rem 0;
+    
+}
+@media (min-width: 768px){
+    .formulario{
+        width: 95%;
+    }
+}
+
+
+.sombra {
+    box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
+    background-color: var(--blanco);
+    padding: 4rem;
+    border-radius: 1.2rem;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label{
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #229954;
+    font-weight: bold;
+}
+
+.campo input{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #D0D3D4;
+}
+
+.buttonAdd{
+    margin-top: 2rem;
+    width: 100%;
+    border: none;   
+    padding: 1.5rem;
+    background-color: #1E8449;
+    color: rgb(240, 234, 234);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.contenedorMensaje{
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: rgb(172, 35, 35);
+    font-weight: bold;
+    
+}
+
+
+.info-gasto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px){
+    .info-gasto{
+        flex-direction: row;
+        justify-content: space-between;
+   
+        
+        gap: 3rem;
+    }
+
+    .info-gasto > div{
+        width: 50%;
+    }
+}
+
+.contenedor-descripcion  p{
+    font-weight: bold;
+    color: #229954;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+}
+
+.contenedor-descripcion p span{
+    color: rgb(102, 95, 95);
+    font-weight: normal;
+}
+
+.iconAdd{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+
+}
+.iconAdd img{
+    width: 8rem;
+    cursor: pointer;
+    
+}
+.iconAdd img:hover{
+    transition: .3s all ease-in-out;
+    transform: scale(1.1);
+}
+
+.formulario-modal{
+    width: 70%;
+    max-width: 50rem;
+    margin: 0 auto;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+}
+.formulario-modal p, label {
+    color: rgb(230, 222, 222);
+}
+.title-modal{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #229954 ;
+    font-weight: bold;
+}
+
+.modal{
+    position: absolute;
+    background-color: rgb(0 0 0 / 0.92);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:0;
+}
+.campo-modal{
+    margin-bottom: 2rem;
+}
+.categoria{
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.campo-modal label{
+    text-align: start;
+}
+.formulario-modal input[type="submit"]{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    background-color: #1b7741 ;
+    border: none;
+    color: rgb(235, 229, 229);
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+.formulario-modal.animar{
+    position: relative;
+    opacity: 1;
+}
+
+.formulario-modal.cerrar{
+    opacity: 0;
+}
+
+.formulario-modal input[type="submit"]:hover{
+    background-color:#12542d ;
+    transition: .3s ease-in-out;
+}
+
+.btn-cerrar{
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+.btn-cerrar img{
+    width: 4rem;
+}
+
+
+.error{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 130px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background-color: rgb(133, 27, 27);
+    width: 70%;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: .5rem;
+}
+.btn-cerrar img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s ease-in;
+}
+
+
+.contain-spent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blanco);
+    margin-bottom: 3rem;
+    padding: 2rem;
+    width: 100%;
+
+}
+.title-gasto{
+
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+}
+.descripcion-gasto p:first-child{
+    text-transform: uppercase;
+    color: var(--gris);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.descripcion-gasto p:nth-child(2), .descripcion-gasto span{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(114, 106, 106);
+}
+.cantidad p{
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.descripcion-gasto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.imagen-category{
+    width: 4rem;
+    
+}
+.swipeable-list .swipe-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    text-align: right;
+}
+
+.swipe-action__leading {
+    background-color: #229954;
+    margin-bottom: 2rem;
+}
+
+.swipe-action__trailing{
+    background-color: #B03A2E;
+    margin-bottom: 2rem;
+}
+.swipe-action{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--blanco);
+}
+.CircularProgressbar .CircularProgressbar-text{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.medium{
+    color: #F5B041;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.excedido{
+    color: #B03A2E;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.contenedor-filtro{
+    margin-top: 10rem;
+}
+
+.deleted{
+    width: 100%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #C0392B;
+    color: white;
+}
+
+.deleted:hover{
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    background-color: #B03A2E;
+}
+
+@media (min-width: 768px){
+
+    .descripcion-gasto p:nth-child(2), .descripcion-gasto span{
+        font-size: 2rem;
+
+    }
+
+    .cantidad p{
+        font-size: 2.5rem;
+    }
+    .title-gasto{
+        font-size: 3rem;
+    }
+
+    .descripcion-gasto p:first-child{
+        font-size: 2rem;
+    }
+
+    .contenedor-descripcion p{
+        font-size: 2.5rem;
+    }
+}
