@@ -37,7 +37,9 @@ header{
     text-align: center;
     color: white;
     text-transform: uppercase;
-    padding: 3rem 0;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 3rem;
 }
 
@@ -145,7 +147,7 @@ header{
     color: #229954;
     font-size: 2rem;
     text-transform: uppercase;
-
+    text-align: center;
 }
 
 .contenedor-descripcion p span{
@@ -160,7 +162,7 @@ header{
 
 }
 .iconAdd img{
-    width: 8rem;
+    width: 6rem;
     cursor: pointer;
     
 }
@@ -285,6 +287,7 @@ header{
     font-weight: bolder;
     text-align: center;
     color: white;
+    padding: 2rem;
 }
 .descripcion-gasto p:first-child{
     text-transform: uppercase;
@@ -376,6 +379,21 @@ header{
     .descripcion-gasto p:nth-child(2), .descripcion-gasto span{
         font-size: 2rem;
 
+    }
+    .iconAdd img{
+        width: 8rem;
+
+        
+    }
+    .title{
+    
+        padding-left: 1rem;
+        padding-right: 1rem;
+     
+    }
+    
+    .contenedor-descripcion  p{
+        text-align: start;
     }
 
     .cantidad p{
